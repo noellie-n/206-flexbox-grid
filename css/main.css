@@ -104,37 +104,65 @@ html {
 
 body {
   font-family: 'Source Sans Pro', sans-serif;
-  font-weight: 700;
   color: #fff;
-  padding: 2em;
-  height: 100%;
+  padding: 0 2em;
+  display: flex;
+  justify-content: center;
 }
 
 .wrapper {
-  /*add display:flex and set justify-content to space-between*/
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-  align-items: center;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
 }
 
-.wrapper span{
-    font-family: 'Source Sans Pro', sans-serif;
-    font-weight: 900;
-    font-size: 1.3em;
+header,
+footer,
+main {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
 
-.div-1, .div-2, .div-3 {
-  /*give the divs a width of 30%, add display:flex, set justify-content and align-items to center*/
-  line-height: 1.5em;
-  font-size: 1.25em;
-  background-color: none;
-  display: flex;
-  width: 30%;
-  justify-content: center;
-  align-items: center;
+.flex-item {
+    line-height: 1.5em;
+    font-size: 1.25em;
+    background-color: none;
+    display: flex;
+    width: 30%;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
 }
 
+header {
+    height: 125px;
+    width: 100%;
+    font-family: 'Lora', serif;
+    font-weight: 700;
+    font-size: 3.5em;
+}
+
+main {
+    height: 150px;
+    width: 100%;
+    font-size: 1.75em;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #fff;
+}
+
+p span{
+    font-family: 'Lora', serif;
+    font-weight: 700; 
+}
+
+footer {
+    height: 80px;
+    width: 100%;
+    border-top: 1px solid #fff;
+}
 
 
 /* ==========================================================================
@@ -218,15 +246,17 @@ body {
    ========================================================================== */
 
 @media all and (min-width: 1200px) {
-    .div-1, .div-2, .div-3 {
+    .flex-item {
       flex-basis: 30%;
     }
 
-    .div-1, .div-2 {
-      border-right: 2px solid #555;
+    #div-1, #div-2 {
+      border-right: 1px solid #555;
       padding-right: 30px;
     }
 }
+
+@media (max-width:)
 
 @media print,
        (-webkit-min-device-pixel-ratio: 1.25),
