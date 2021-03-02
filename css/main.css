@@ -117,54 +117,49 @@ body {
     align-items: center;
     max-width: 1200px;
 }
-
-header,
-footer,
-main {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-}
-
-.flex-item {
-    line-height: 1.5em;
-    font-size: 1.25em;
-    background-color: none;
-    display: flex;
-    width: 30%;
-    justify-content: center;
-    align-items: center;
-    margin: 20px auto;
-}
-
-header {
-    height: 125px;
-    width: 100%;
-    font-family: 'Lora', serif;
-    font-weight: 700;
-    font-size: 3.5em;
-}
-
-main {
-    height: 150px;
-    width: 100%;
-    font-size: 1.75em;
-    padding-bottom: 30px;
-    border-bottom: 1px solid #fff;
-}
-
 p span{
     font-family: 'Lora', serif;
     font-weight: 700; 
 }
 
-footer {
-    height: 80px;
+header,
+footer{
     width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+header h1{
+    font-family: 'Lora', serif;
+    font-weight: 700;
+    font-size: 3.25em;
+}
+
+main {
+    width: 100%;
+    font-size: 1.5em;
+    padding-bottom: 1em;
+    border-bottom: 1px solid #fff;
+}
+
+.flex-item {
+    line-height: 1.5em;
+    font-size: 1.2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #555;
+}
+
+footer {
     border-top: 1px solid #fff;
 }
 
+footer i {
+    /*----- NEED HELP HERE -----*/
+  }
 
+  
 /* ==========================================================================
    Helper classes
    ========================================================================== */
