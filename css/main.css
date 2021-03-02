@@ -159,7 +159,7 @@ footer i {
     /*----- NEED HELP HERE -----*/
   }
 
-  
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -243,6 +243,7 @@ footer i {
 @media all and (min-width: 1200px) {
     .flex-item {
       flex-basis: 30%;
+      border-bottom: none;
     }
 
     #div-1, #div-2 {
@@ -250,8 +251,6 @@ footer i {
       padding-right: 30px;
     }
 }
-
-@media (max-width:)
 
 @media print,
        (-webkit-min-device-pixel-ratio: 1.25),
